@@ -1,122 +1,192 @@
 <!doctype html>
 <html>
-    <head>
-        <title>Techstitution</title>
-        <link rel="stylesheet" href="./css/styles.css">
-        <link rel="stylesheet" href="./css/bootstrap/css/bootstrap.min.css">
-        <script src="./css/bootstrap/js/bootstrap.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-    </head>
-    <body>
-        
+<head>
 
-        
-   <!--  <div class="special">
-         <p>u say yes</p>
-         <p>i say no</p>
-     </div>
-     <div>
-         <p>u say goodbye</p>
-         <p class="special">i say hello</p>
-     </div>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="./css/styleDetyra.css">
+</head>
 
-     <div class="form-group">
-            <form>
-                <label for="name">First Name</label>
-                <input  type="text" name="name" placeholder="Your Name"class=".form-control">
-                <label for="lastname">First Name</label>
-                <input  type="text" name="lasname" placeholder="Your LastName"class=".form-control"><br>
-                <input type="radio" name="gender" value="male"class=".form-control"> Male
-                <input type="radio" name="gender" value="female"class=".form-control"> Female
-                <input type="radio" name="gender" value="other" class=".form-control"> Other<br>
-                <label for="email">Email</label>
-                <input type="email" name="email" placeholder="write email"class=".form-control">
-                <label for="pass">Password</label>
-                <input type="password" name="pass" placeholder="write password" class=".form-control"><br>
-                <label>Birthday:</label>
-                <select name="month" class=".form-control">
-                        <option >Month</option>
-                        <option value="janar">Janar</option>
-                        <option value="">Shkurt</option>
-                        <option value="">Mars</option>
-                        <option value="">Prill</option>
-                 </select>
-
-                 <select name="day" id="Day" class=".form-control">
-                        <option >Day</option>
-                        <option value="">1</option>
-                        <option value="">2</option>
-                        <option value="">3</option>
-                        <option value="">4</option>
-                 </select>
-                 <select name="year" class=".form-control">
-                        <option >Year</option>
-                        <option value="">2000</option>
-                        <option value="">2001</option>
-                        <option value="">2002</option>
-                        <option value="">2003</option>
-                 </select><br>
-                 <label>I agree with the term conditions</label>
-                 <input type="checkbox" class=".form-control"><br>
-                 <input type="button" value="Submit" class="btn btn-primary">
-
-            </form>
-        </div>    -->
-        <h1>Selectors Exercise</h1>
-        
-        <p>PARAGRAPH NOT INSIDE A DIV</p>
-        
-        <div>
-          <p class="hello">I am a paragraph with a class</p>
-          <p id="special">I am a paragraph with an ID</p>
-        
-          <h2>I am an awesome h2</h2>
-        
-        
-          <p>Roof party yr hella synth, Wes Anderson narwhal four dollar toast before they sold out retro lo-fi. Austin iPhone pop-up farm-to-table, PBRB McSweeney's ennui messenger bag distillery before they sold out Portland wolf fanny pack YOLO. Locavore slow-carb trust fund farm-to-table. Pinterest gastropub lo-fi, McSweeney's trust fund VHS shabby chic ugh Austin twee. Messenger bag banjo lumbersexual, whatever 3 wolf moon XOXO normcore. Pug fanny pack 3 wolf moon, typewriter organic chia mustache scenester seitan shabby chic Blue Bottle salvia ugh iPhone. Fanny pack Williamsburg direct trade, cold-pressed disrupt flannel listicle health goth asymmetrical freegan mixtape street art pour-over whatever.</p>
-        
+<body>
+    <div class="container">
+        <form class="form-horizontal">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="textMiddle">Forma e regjistrimit te pikave kufitare</h1>
+            </div>
         </div>
-        
-        <div>
-          <h2>Things I need to do</h2>
-        
-          <ul>
-            <li>Walk Dog <input type="checkbox" checked> </li>
-            <li>Feed Dog <input type="checkbox" checked> </li>
-            <li>Wash Dog <input type="checkbox"></li>
-          </ul>
+        <div class="row">
+            <div class="col-md-4">
+            </div>
+            <div class="col-md-4">
+                <form>
+                    <div class="form-group">
+                        <label for="sel1">Pika Kufitare</label>
+                        <select class="form-control" id="sel1">
+                            <option>Pika Kufitare 1</option>
+                            <option>Pika Kufitare 2</option>
+                            <option>Pika Kufitare 3</option>
+                            <option>Pika Kufitare 4</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-4">
+            </div>
         </div>
-        
-        <div >
-          <h2>I am another awesome h2</h2>
-        
-          <p class="pink">Cardigan Tumblr mlkshk, fap tilde 3 wolf moon Portland. Heirloom health goth taxidermy blog lo-fi selfies, post-ironic master cleanse fingerstache normcore. Kickstarter plaid twee, bespoke single-origin coffee sustainable lo-fi vinyl Pinterest pork belly <em class="emFont">cronut skateboard</em> 3 wolf moon. Normcore single-origin coffee salvia, bespoke Austin swag Godard before they sold out kogi disrupt locavore. Lumbersexual Shoreditch Vice, artisan American Apparel master cleanse yr salvia vegan. Bespoke letterpress heirloom kale chips deep v four loko. Lomo sustainable put a bird on it trust fund post-ironic</p>
-        
-          <p class="pink" class="white">I'm the second paragraph inside this div!</p>
+        <hr>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="textMiddle">Hyrje</h2>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="textToRight">Minumum</p>
+                    </div>
+                    <div class="col-md-4">
+                        <input type="text" class="form-control" id="usr">
+                    </div>
+                    <div class="col-md-4">
+                        <label>Minuta</label>
+                    </div>
+
+
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+
+                    </div>
+                    <div class="col-md-4">
+                        <p class="textToRight">Maximum</p>
+                    </div>
+                    <div class="col-md-4">
+                        <input type="text" class="form-control" id="usr">
+                    </div>
+                    <div class="col-md-4">
+                        <label>Minuta</label>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="textMiddle">Dalje</h2>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="textToRight">Minumum</p>
+                    </div>
+                    <div class="col-md-4">
+                        <input type="text" class="form-control" id="usr">
+                    </div>
+                    <div class="col-md-4">
+                        <label>Minuta</label>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+
+                    </div>
+                    <div class="col-md-4">
+                        <p class="textToRight">Maximum</p>
+                    </div>
+                    <div class="col-md-4">
+                        <input type="text" class="form-control" id="usr">
+                    </div>
+                    <div class="col-md-4">
+                        <label>Minuta</label>
+                    </div>
+
+                </div>
+            </div>
+
         </div>
-        
-        <p>PARAGRAPH NOT INSIDE A DIV</p>
-        
-        
-        <div>
-          <h2>A less awesome h2</h2>
-        
-          <p>Roof party yr hella synth, Wes Anderson narwhal four dollar toast before they sold out retro lo-fi. Austin iPhone pop-up farm-to-table, PBRB McSweeney's ennui messenger bag distillery before they sold out Portland wolf fanny pack YOLO. Locavore slow-carb trust fund farm-to-table. Pinterest gastropub lo-fi, McSweeney's trust fund VHS shabby chic ugh Austin twee. Messenger bag banjo lumbersexual, whatever 3 wolf moon XOXO normcore. Pug fanny pack 3 wolf moon, typewriter organic chia mustache scenester seitan shabby chic Blue Bottle salvia ugh iPhone. Fanny pack Williamsburg direct trade, cold-pressed disrupt flannel listicle health goth asymmetrical freegan mixtape street art pour-over whatever</p>
-        
-          <p>One last paragraph here!</p>
-        
-          <a href="http://www.facebook.com">I am a link to facebook</a>
-          <a href="http://www.facebook.com">I am another link to facebook</a>
-          <br>
-        
-          <input type="text" name="name" /><label> Name</label><br/>
-          <input type="password" name="password" /><label> Password</label><br/>
-        
+        <hr>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="textMiddle">Hyrje</h2>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="textToRight">Minumum</p>
+                    </div>
+                    <div class="col-md-4">
+                        <input type="text" class="form-control" id="usr">
+                    </div>
+                    <div class="col-md-4">
+                        <label>Metra</label>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+
+                    </div>
+                    <div class="col-md-4">
+                        <p class="textToRight">Maximum</p>
+                    </div>
+                    <div class="col-md-4">
+                        <input type="text" class="form-control" id="usr">
+                    </div>
+                    <div class="col-md-4">
+                        <label>Metra</label>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="textMiddle">Dalje</h2>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="textToRight">Minumum</p>
+                    </div>
+                    <div class="col-md-4">
+                        <input type="text" class="form-control" id="usr">
+                    </div>
+                    <div class="col-md-4">
+                        <label>Metra</label>
+                    </div>
+
+                </div>
+                <div class="row">
+
+                    <div class="col-md-4">
+                        <p class="textToRight">Maximum</p>
+                    </div>
+                    <div class="col-md-4">
+                        <input type="text" class="form-control" id="usr">
+                    </div>
+                    <div class="col-md-4">
+                        <label>Metra</label>
+                    </div>
+
+                </div>
+            </div>
+
         </div>
-        
-        <p>PARAGRAPH NOT INSIDE A DIV</p>
-        
-        
-    </body>
+        <hr>
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <button type="button" class="btn btn-success">Dergo</button>
+                <button type="button" class="btn btn-danger">Fshij</button>
+            </div>
+            <div class="col-md-4"></div>
+
+        </div>
+    </form>
+    </div>
+</body>
 </html>

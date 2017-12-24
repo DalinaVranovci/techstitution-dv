@@ -1,0 +1,177 @@
+<% include ./partials/header %>
+<% include ./partials/navbar %>
+<form class="form-horizontal" method="POST" action="/add">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="textMiddle"><%= title %></h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-4">
+        
+                <div class="form-group">
+                    <label for="sel1">Pika Kufitare</label>
+                    <select class="form-control" id="sel1" name="pika_kufitare">
+                        <option>Pika Kufitare 1</option>
+                        <option>Pika Kufitare 2</option>
+                        <option>Pika Kufitare 3</option>
+                        <option>Pika Kufitare 4</option>
+                    </select>
+                </div>
+            
+        </div>
+        <div class="col-md-4">
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="textMiddle">Hyrje</h2>
+                </div>
+                <div class="col-md-4">
+                    <p class="textToRight">Minumum</p>
+                </div>
+                <div class="col-md-4">
+                    <input type="text" class="form-control" id="usr" name="hyrje_minMinuta">
+                </div>
+                <div class="col-md-4">
+                    <label>Minuta</label>
+                </div>
+
+
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+
+                </div>
+                <div class="col-md-4">
+                    <p class="textToRight">Maximum</p>
+                </div>
+                <div class="col-md-4">
+                    <input type="text" class="form-control" id="usr" name="hyrje_maxMinuta">
+                </div>
+                <div class="col-md-4">
+                    <label>Minuta</label>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="textMiddle">Dalje</h2>
+                </div>
+                <div class="col-md-4">
+                    <p class="textToRight">Minumum</p>
+                </div>
+                <div class="col-md-4">
+                    <input type="text" class="form-control" id="usr" name="dalje_minMinuta">
+                </div>
+                <div class="col-md-4">
+                    <label>Minuta</label>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+
+                </div>
+                <div class="col-md-4">
+                    <p class="textToRight">Maximum</p>
+                </div>
+                <div class="col-md-4">
+                    <input type="text" class="form-control" id="usr" name="dalje_maxMinuta">
+                </div>
+                <div class="col-md-4">
+                    <label>Minuta</label>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="textMiddle">Hyrje</h2>
+                </div>
+                <div class="col-md-4">
+                    <p class="textToRight">Minumum</p>
+                </div>
+                <div class="col-md-4">
+                    <input type="text" class="form-control" id="usr" name="hyrje_minMetra">
+                </div>
+                <div class="col-md-4">
+                    <label>Metra</label>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+
+                </div>
+                <div class="col-md-4">
+                    <p class="textToRight">Maximum</p>
+                </div>
+                <div class="col-md-4">
+                    <input type="text" class="form-control" id="usr" name="hyrje_maxMetra">
+                </div>
+                <div class="col-md-4">
+                    <label>Metra</label>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="textMiddle">Dalje</h2>
+                </div>
+                <div class="col-md-4">
+                    <p class="textToRight">Minumum</p>
+                </div>
+                <div class="col-md-4">
+                    <input type="text" class="form-control" id="usr" name="dalje_minMetra">
+                </div>
+                <div class="col-md-4">
+                    <label>Metra</label>
+                </div>
+
+            </div>
+            <div class="row">
+
+                <div class="col-md-4">
+                    <p class="textToRight">Maximum</p>
+                </div>
+                <div class="col-md-4">
+                    <input type="text" class="form-control" id="usr" name="dalje_maxMetra">
+                </div>
+                <div class="col-md-4">
+                    <label>Metra</label>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <input type="submit" class="btn btn-success" value="Dergo"/>
+            <button type="button" class="btn btn-danger">Fshij</button>
+        </div>
+        <div class="col-md-4"></div>
+
+    </div>
+</form>
+
+
+<%- include ./partials/footer %>
+

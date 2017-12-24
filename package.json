@@ -1,0 +1,29 @@
+{
+  "name": "techstitution-dv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "express-generator": "^4.15.5",
+    "mongodb": "^2.2.33",
+    "nodemon": "^1.14.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DalinaVranovci/techstitution-dv.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DalinaVranovci/techstitution-dv/issues"
+  },
+  "homepage": "https://github.com/DalinaVranovci/techstitution-dv#readme"
+}

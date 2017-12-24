@@ -1,0 +1,45 @@
+<% include partials/header %>
+<% include ./partials/navbar %>
+<p> <%=title %></p>
+<table class="table table-bordered">
+       <thead>
+         <tr>
+           <th> Pika kufitare </th>
+           <th> Hyrje min minuta</th>
+           <th> Hyrje max minuta</th>
+           <th> Hyrje min metra</th>
+           <th> Hyrje max metra</th>
+           <th> Dalje min minuta</th>
+           <th> Dalje max minuta</th>
+           <th> Dalje min metra</th>
+           <th> Dalje max metra</th>
+           <th> Dergo </th>
+           <th> Fshije </th>
+         </tr>
+       </thead>
+       <tbody>
+
+
+   <tr>
+           <% for(var i=0; i<docs.length; i++){%>
+       <td><%= docs[i].pika_kufitare %></td>
+       <td><%= docs[i].hyrje_minMinuta %></td>
+       <td><%= docs[i].hyrje_maxMinuta %></td>
+       <td><%= docs[i].hyrje_minMetra %></td>
+       <td><%= docs[i].hyrje_maxMetra %></td>
+       <td><%= docs[i].dalje_minMinuta %></td>
+       <td><%= docs[i].dalje_maxMinuta %></td>
+       <td><%= docs[i].dalje_minMetra %></td>
+       <td><%= docs[i].dalje_maxMetra %></td>
+       <td><a href="/edit/<%= docs[i]._id %>">Edit</a></td>
+        <td><a href="/delete/<%= docs[i]._id %>">Delete</a></td>
+       
+
+   </tr>
+<% } %>
+
+       </tbody>
+     </table>
+
+</table>
+<%- include ./partials/footer %>

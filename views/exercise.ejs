@@ -1,0 +1,19 @@
+<%- include ./partials/header %>
+<div class="container">
+<p>Emri dhe mbiemri:  <%= data.Emri %> <%= data.Mbiemri %></p>
+<p>Te dhenat e vargut: 
+    <ul>
+        <% for(var i=0; i < project.length; i++) { %>
+           
+           
+             <li><%= project[i].id %> <%= project[i].name %> 
+            </li>
+           
+        <% } %> 
+        </ul>
+</p>
+
+
+
+</div>
+<%- include ./partials/footer %>
