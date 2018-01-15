@@ -1,0 +1,50 @@
+<% include ./partials/header %>
+<% include ./partials/navbar %>
+<div id="container" style="width:100%; height:400px;">
+    <script>
+        $(function () { 
+    var myChart = Highcharts.chart('container', {
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: 'Pritjet ne pika kufitare'
+        },
+        xAxis: {
+            categories: ['Pika kufitare 1', 'Pika kufitare 2', 'Pika kufitare 3','Pika kufitare 4']
+        },
+       
+        series: [{
+            name: 'Hyrje-minutat',
+            data: [1, 0, 4]
+        }, {
+            name: 'Dalje-minutat',
+            data: [5, 7, 3]
+        },
+        {
+            name: 'Hyrje-metrat',
+            data: [1, 0, 4]
+        },
+        {
+            name: 'Dalje-metrat',
+            data: [1, 0, 4]
+        }
+    ]
+    });
+});
+
+var chart1; // globally available
+$(function() {
+       chart1 = Highcharts.stockChart('container', {
+         rangeSelector: {
+            selected: 1
+         },
+         series: [{
+            name: 'USD to EUR',
+            data: usdtoeur // predefined JavaScript array
+         }]
+      });
+   });
+    </script>
+</div>
+<%- include ./partials/footer %>

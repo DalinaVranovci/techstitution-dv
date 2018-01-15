@@ -28,6 +28,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use(express.static(__dirname+'/public'));
 
 app.get('/', (req, res) => res.render('index', {title: val1}));
+
 app.get('/exercise', (req, res) => res.render("exercise", {data: dataJson, project: projectData}));
 app.get('/show',function(req,res){
     var title="Lista me te dhena";
@@ -36,6 +37,15 @@ app.get('/show',function(req,res){
             console.log(err);
         }
         res.render('show' , {title : title ,docs :docs});
+});  
+});
+app.get('/visualisation',function(req,res){
+    var title="Lista me te dhena";
+    qkmk.find({}).toArray(function(err,docs){
+        if(err){
+            console.log(err);
+        }
+        res.render('visualisation');
 });  
 });
 
